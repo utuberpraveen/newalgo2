@@ -1,0 +1,28 @@
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment
+.venv/
+venv/
+ganesha/  # Assuming this is your virtual environment folder
+
+# Ignore logs
+Logs/
+*.log
+
+# Ignore database files (optional, if you don’t want to track SQLite DB)
+*.sqlite3
+*.db
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files (secrets or configuration)
+*.env
+samplenv.env
+
+# Ignore VSCode workspace settings (optional)
+.vscode/

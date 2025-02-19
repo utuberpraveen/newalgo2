@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test API</title>
+</head>
+<body>
+    <h2>Login API Test</h2>
+    <button onclick="sendRequest()">Send Login Request</button>
+    <p id="response"></p>
+
+    <script>
+        function sendRequest() {
+            fetch("http://127.0.0.1:5000/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    "userid": "BGRKA1202",
+                    "password": "Ch@pper1",
+                    "2FA": "20/04/1949",
+                    "apikey": "3x5BxErcP7Ks13Rx",
+                    "totp": "123456"
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("response").innerText = JSON.stringify(data);
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+        }
+    </script>
+</body>
+</html>

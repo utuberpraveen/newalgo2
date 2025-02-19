@@ -1,0 +1,132 @@
+https://www7.v1host.com/V1Production/assetdetail.v1?number=I-13627
+
+gcloud compute ssh instance-20241216-141222 --zone us-central1-c
+
+gcloud compute scp flask-app.tar emailtopraveenb1@instance-20241216-141222:~/newalgo/ --project=newalgov1 --zone us-central1-c
+
+gcloud compute ssh test-vm --zone us-central1-c 
+
+
+curl -X POST http://127.0.0.0:5000/api/logindirect -H "Content-Type: application/json" -d '{
+    "appKey": "3x5BxErcP7Ks13Rx",
+    "userId": "BGRKA1202",
+    "password": "Ch@pper1",
+    "dob": "20/04/1949",
+    "totp": ""
+}'
+
+curl -X POST http://127.0.0.0:5000/api/ltp -H "Content-Type: application/json" -d '{
+      "stockTokens": ["18422", "10440", "1414"]
+}'
+
+curl -X POST http://127.0.0.1:5000/logout
+
+.  can build this into a Docker image.. so I can just transfer this docker and run it on my VM instance?
+
+if yes, then please give me details to install docker as well as other details that is needed go gunicor or ngix setup and ready
+
+Please first let me know if this is possible and plan for above.
+
+
+emailtopraveenb1@instance-20241216-141222:
+
+ssh to my instance
+gcloud compute ssh instance-20241216-141222 --zone us-central1-c
+
+
+git clone https://github.com/utuberpraveen/newalgo.git newalgo
+
+emailtopraveenb1@34.57.2.96
+
+
+scp newalgo-image.tar emailtopraveenb1@34.57.2.96:/newalgo
+
+
+gcloud compute instances set-service-account \
+    instance-20241216-141222 \
+    --service-account=emailtopraveenb1@gmail.com \
+    --scopes=https://www.googleapis.com/auth/cloud-platform
+
+
+
+
+docker run -p 5000:5000 --name newalgo-container newalgo-image
+
+emailtopraveenb1@instance-20241216-141222:
+
+ssh to my instance
+ 	
+
+
+git clone https://github.com/utuberpraveen/newalgo.git newalgo
+
+emailtopraveenb1@34.57.2.96
+
+
+scp newalgo-image.tar emailtopraveenb1@34.57.2.96:/newalgo
+
+
+gcloud compute instances set-service-account \
+    instance-20241216-141222 \
+    --service-account=emailtopraveenb1@gmail.com \
+    --scopes=https://www.googleapis.com/auth/cloud-platform
+
+
+
+
+docker run -p 5000:5000 --name newalgo-container newalgo-image
+
+gcloud compute instances describe instance-20241216-141222 --format="flattened(tags.items)"
+
+gcloud compute instances describe 4366051653565909168 --format="flattened(tags.items)"
+
+gcloud compute instances describe INSTANCE_NAME --format="flattened(tags.items)"
+
+
+gcloud compute instances describe <instance-20241216-141222> --format="get(networkInterfaces[0].accessConfigs[0].natIP)"
+
+
+Created [https://www.googleapis.com/compute/v1/projects/newalgov1/zones/us-central1-c/instances/test-vm].
+NAME: test-vm
+ZONE: us-central1-c
+MACHINE_TYPE: e2-micro
+PREEMPTIBLE: 
+INTERNAL_IP: 10.128.0.3
+EXTERNAL_IP: 35.193.21.111
+STATUS: RUNNING
+
+
+
+gcloud compute ssh test-vm --zone=us-central1-c
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/emailtopraveenb1/.ssh/google_compute_engine
+Your public key has been saved in /home/emailtopraveenb1/.ssh/google_compute_engine.pub
+The key fingerprint is:
+SHA256:1YMlq2zJHI9Hs1AbJEILtYqqNurTlF6pEn/wnGEeKzo emailtopraveenb1@cs-479311175087-default
+The key's randomart image is:
++---[RSA 3072]----+
+|    .o+ ..= .    |
+|     . + o O     |
+|      o o B o    |
+|   . . + X o .   |
+|  . o . S +      |
+| o + * . .       |
+|. * O =          |
+|.E * B           |
+|*o* o            |
++----[SHA256]-----+
+Updating project ssh metadata...workingUpdated [https://www.googleapis.com/compute/v1/projects/newalgov1].                                                                                     
+Updating project ssh metadata...done.                                                                                                                                                          
+Waiting for SSH key to propagate.
+Warning: Permanently added 'compute.6858352696477218845' (ED25519) to the list of known hosts.
+Linux test-vm 5.10.0-33-cloud-amd64 #1 SMP Debian 5.10.226-1 (2024-10-03) x86_64
+
+
+
+
+
+
+
+

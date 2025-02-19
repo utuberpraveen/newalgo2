@@ -1,0 +1,31 @@
+2025-02-13 11:23:44             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-02-13 11:23:44             SUCCESS             MOFSLOPENAPI.py             GetManufacturerLENOVO
+2025-02-13 11:23:44             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-02-13 11:26:35             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-02-13 11:26:36             SUCCESS             MOFSLOPENAPI.py             GetManufacturerLENOVO
+2025-02-13 11:26:37             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-02-13 11:26:37             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-02-13 11:26:37             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-02-13 11:26:38             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-02-13 11:26:38             ERROR             MOFSLOPENAPI.py             Two Factor Authentication Failed
+2025-02-13 11:27:32             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-02-13 11:27:32             SUCCESS             MOFSLOPENAPI.py             GetManufacturerLENOVO
+2025-02-13 11:27:33             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-02-13 11:27:33             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-02-13 11:27:33             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-02-13 11:27:34             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-02-13 11:27:34             ERROR             MOFSLOPENAPI.py             Two Factor Authentication Failed
+2025-02-13 11:28:09             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-02-13 11:28:09             SUCCESS             MOFSLOPENAPI.py             GetManufacturerLENOVO
+2025-02-13 11:28:10             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-02-13 11:28:10             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-02-13 11:28:10             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-02-13 11:28:11             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-02-13 11:28:11             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-02-13 11:30:10             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-02-13 11:30:15             SUCCESS             MOFSLOPENAPI.py             GetManufacturerLENOVO
+2025-02-13 11:30:16             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-02-13 11:30:16             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-02-13 11:30:16             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-02-13 11:30:17             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-02-13 11:30:17             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
